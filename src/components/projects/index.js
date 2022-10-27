@@ -18,17 +18,17 @@ const projects = [
       tools: "Flask and Vue",
     },
   },
-  {
-    cover_image: workspaceCover,
-    projectName: "Workspace",
-    link: "https://workspaceapp.works/",
-    live: true,
-    details: {
-        body: `This web application seeks to solve the problem employers face when managing employees.
-        Some of the featues include, employee management, payroll system and attendance management.`,
-        tools: "Flask and React",
-    },
-  },
+  // {
+  //   cover_image: workspaceCover,
+  //   projectName: "Workspace",
+  //   link: "https://workspaceapp.works/",
+  //   live: true,
+  //   details: {
+  //       body: `This web application seeks to solve the problem employers face when managing employees.
+  //       Some of the featues include, employee management, payroll system and attendance management.`,
+  //       tools: "Flask and React",
+  //   },
+  // },
   {
     cover_image: whatsappCover,
     projectName: "Whatapp Clone",
