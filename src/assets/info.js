@@ -90,7 +90,7 @@ const info = {
     linkedin: "https://linkedin.com/in/miebakaiwarri",
     github: "https://github.com/iMiebaka",
   },
-  cv: "https://github.com/iMiebaka/iMiebaka.github.io/raw/main/assets/Miebaka-Iwarri_CV.pdf",
+  cv: "https://github.com/iMiebaka/iMiebaka.github.io/raw/main/docs/assets/Miebaka-Iwarri_CV.pdf",
 };
 
 export default info;
