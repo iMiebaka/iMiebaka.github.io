@@ -17,6 +17,7 @@ const Header = () => {
   };
   return (
     <header className="header" id="home">
+
       <a href=""><img src={IMAGES.favicon} alt="" srcSet="" width="50" /></a>
       <ul className="main-view-header">
         <li>
