@@ -11,7 +11,7 @@ function App() {
               >
                 <img
                   className="img-fluid rounded-pill d-block"
-                  src="images/web-developer-160x160.jpg"
+                  src="http://demo.harnishdesign.net/html/doon/images/web-developer-160x160.jpg"
                   title="I'm David"
                   alt=""
                 />
@@ -202,9 +202,9 @@ function App() {
                         className="progress-bar"
                         role="progressbar"
                         style={{ width: "95%" }}
-                        aria-valuenow="95"
-                        aria-valuemin="0"
-                        aria-valuemax="100"
+                        aria-valuenow={95}
+                        aria-valuemin={0}
+                        aria-valuemax={100}
                       ></div>
                     </div>
                     <p className="text-dark font-weight-500 text-left mb-2">
@@ -215,9 +215,9 @@ function App() {
                         className="progress-bar"
                         role="progressbar"
                         style={{ width: "65%" }}
-                        aria-valuenow="65"
-                        aria-valuemin="0"
-                        aria-valuemax="100"
+                        aria-valuenow={65}
+                        aria-valuemin={0}
+                        aria-valuemax={100}
                       ></div>
                     </div>
                     <p className="text-dark font-weight-500 text-left mb-2">
@@ -229,9 +229,9 @@ function App() {
                         className="progress-bar"
                         role="progressbar"
                         style={{ width: "80%" }}
-                        aria-valuenow="80"
-                        aria-valuemin="0"
-                        aria-valuemax="100"
+                        aria-valuenow={80}
+                        aria-valuemin={0}
+                        aria-valuemax={100}
                       ></div>
                     </div>
                     <p className="text-dark font-weight-500 text-left mb-2">
@@ -242,9 +242,9 @@ function App() {
                         className="progress-bar"
                         role="progressbar"
                         style={{ width: "55%" }}
-                        aria-valuenow="55"
-                        aria-valuemin="0"
-                        aria-valuemax="100"
+                        aria-valuenow={55}
+                        aria-valuemin={0}
+                        aria-valuemax={100}
                       ></div>
                     </div>
                   </div>
@@ -400,7 +400,7 @@ function App() {
                       {" "}
                       <img
                         className="img-fluid d-block rounded"
-                        src="images/projects/project-1.jpg"
+                        src="http://demo.harnishdesign.net/html/doon/images/projects/project-1.jpg"
                         alt=""
                       />{" "}
                     </div>
@@ -412,7 +412,7 @@ function App() {
                       {" "}
                       <img
                         className="img-fluid d-block rounded"
-                        src="images/projects/project-6.jpg"
+                        src="http://demo.harnishdesign.net/html/doon/images/projects/project-6.jpg"
                         alt=""
                       />{" "}
                     </div>
@@ -466,7 +466,7 @@ function App() {
                       {" "}
                       <img
                         className="img-fluid d-block rounded"
-                        src="images/projects/project-9.jpg"
+                        src="http://demo.harnishdesign.net/html/doon/images/projects/project-9.jpg"
                         alt=""
                       />{" "}
                     </div>
@@ -478,7 +478,7 @@ function App() {
                       {" "}
                       <img
                         className="img-fluid d-block rounded"
-                        src="images/projects/project-11.jpg"
+                        src="http://demo.harnishdesign.net/html/doon/images/projects/project-11.jpg"
                         alt=""
                       />{" "}
                     </div>
@@ -766,7 +766,7 @@ function App() {
                       </p>
                       <img
                         className="img-fluid rounded-circle border d-inline-block w-auto"
-                        src="images/testimonial/client-sm-1.jpg"
+                        src="http://demo.harnishdesign.net/html/doon/images/testimonial/client-sm-1.jpg"
                         alt=""
                       />{" "}
                       <strong className="d-block font-weight-500 text-uppercase">
@@ -786,7 +786,7 @@ function App() {
                       </p>
                       <img
                         className="img-fluid rounded-circle border d-inline-block w-auto"
-                        src="images/testimonial/client-sm-2.jpg"
+                        src="http://demo.harnishdesign.net/html/doon/images/testimonial/client-sm-2.jpg"
                         alt=""
                       />{" "}
                       <strong className="d-block font-weight-500 text-uppercase">
@@ -805,7 +805,7 @@ function App() {
                       </p>
                       <img
                         className="img-fluid rounded-circle border d-inline-block w-auto"
-                        src="images/testimonial/client-sm-3.jpg"
+                        src="http://demo.harnishdesign.net/html/doon/images/testimonial/client-sm-3.jpg"
                         alt=""
                       />{" "}
                       <strong className="d-block font-weight-500 text-uppercase">
@@ -826,7 +826,7 @@ function App() {
                       </p>
                       <img
                         className="img-fluid rounded-circle border d-inline-block w-auto"
-                        src="images/testimonial/client-sm-4.jpg"
+                        src="http://demo.harnishdesign.net/html/doon/images/testimonial/client-sm-4.jpg"
                         alt=""
                       />{" "}
                       <strong className="d-block font-weight-500 text-uppercase">
