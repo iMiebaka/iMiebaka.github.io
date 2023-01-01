@@ -11,7 +11,7 @@ const projects = [
   {
     cover_image: sabbiImage,
     projectName: "Sabbi",
-    link: "https://sabbipage.com/",
+    link: "https://sabbi.page",
     live: true,
     details: {
       title: "Sabi",
