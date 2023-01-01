@@ -3,32 +3,44 @@ import workspaceCover from "./images/Workspace.png";
 import whatsappCover from "./images/private_chat_screenshot.png";
 import youtubegoCover from "./images/s1.png";
 import cafeteriaManagementCover from "./images/cafeteriaManagement.png"
+import optiquizImage from "./images/optiquiz.png";
+import sabbiImage from "./images/sabbi.png";
 
 
 const projects = [
+  {
+    cover_image: sabbiImage,
+    projectName: "Sabbi",
+    link: "https://sabbipage.com/",
+    live: true,
+    details: {
+      title: "Sabi",
+      body: `Sabbi is a plaform that let's people connect with business around them, It comes with presists location search to get it's users with the closest result in search`,
+      tools: "Flask and React",
+    },
+  },
   {
     cover_image: lajoCover,
     projectName: "Lajo",
     link: "https://lajoapp.com/",
     live: true,
     details: {
-        title: "Lajo",
-        body: `This finetech project is knowm as the bank for the unbanking, it 
+      title: "Lajo",
+      body: `This finetech project is knowm as the bank for the unbanking, it 
         helps SME save up and get interest at a set duration.`,
       tools: "Flask and Vue",
     },
   },
-  // {
-  //   cover_image: workspaceCover,
-  //   projectName: "Workspace",
-  //   link: "https://workspaceapp.works/",
-  //   live: true,
-  //   details: {
-  //       body: `This web application seeks to solve the problem employers face when managing employees.
-  //       Some of the featues include, employee management, payroll system and attendance management.`,
-  //       tools: "Flask and React",
-  //   },
-  // },
+  {
+    cover_image: optiquizImage,
+    projectName: "Opitquiz",
+    link: "https://optiquiz.onrender.com/",
+    live: true,
+    details: {
+      body: `Our optometry quiz platform was created with the goal of providing a comprehensive and convenient resource for optometry students and professionals to improve their knowledge and skills.`,
+      tools: "Typescript",
+    },
+  },
   {
     cover_image: whatsappCover,
     projectName: "Whatapp Clone",

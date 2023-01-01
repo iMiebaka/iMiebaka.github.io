@@ -1,7 +1,7 @@
 const contact = {
   phone: "+234 803 422 4184",
   email: "miebakaiwarri.dev@gmail.com",
-  address: "Port Harcourt, Nigeria",
+  address: "Lagos, Nigeria",
   workingAt: "Uobis",
 };
 
@@ -10,8 +10,8 @@ const info = {
     name: "Miebaka Iwarri",
     position: "Software Engineer",
     details: `I currently work at ${contact.workingAt}.  I major in Web and Mobile apps. 
-    I like to try out new technologies and challenge myself to be the best Software Developer of my time.
-    \n My Technologies are Django, Flask, ExpressJS, React Native, Vue, MySQL, Postgres, MongoDB and Docker.`,
+    My Technologies are Django, Flask, ExpressJS, React Native, Vue, MySQL, Postgres, MongoDB and Docker.
+    \n  I like to try out new technologies and challenge myself to be the best Software Developer of my time.`,
   },
   experience: [
     ["01", "Award", "mdi mdi-trophy achievement-icon", "port-testimony"],
@@ -28,7 +28,7 @@ const info = {
       "port-testimony",
     ],
     [
-      "10+",
+      "4+",
       "Projects",
       "mdi mdi-projector-screen achievement-icon",
       "port-testimony",
