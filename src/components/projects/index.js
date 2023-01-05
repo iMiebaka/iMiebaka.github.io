@@ -34,7 +34,7 @@ const projects = [
   {
     cover_image: optiquizImage,
     projectName: "Opitquiz",
-    link: "https://optiquiz.onrender.com/",
+    link: "https://optiquiz.org/",
     live: true,
     details: {
       body: `Our optometry quiz platform was created with the goal of providing a comprehensive and convenient resource for optometry students and professionals to improve their knowledge and skills.`,
