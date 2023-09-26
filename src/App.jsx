@@ -7,7 +7,7 @@ import { LandingPage, Wallet } from "./pages";
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/iMiebaka.github.io">
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/wallet" element={<Wallet />} />

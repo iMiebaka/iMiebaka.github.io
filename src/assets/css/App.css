@@ -385,9 +385,6 @@ li a {
   flex-grow: 1;
 }
 
-.myexperience-container {
-  /* margin-bottom: 1rem; */
-}
 
 .myexperience-central{
   display: flex;
@@ -458,9 +455,7 @@ span {
   margin-bottom: 0.4rem;
   font-weight: 500;
 }
-.contact-us-desc {
-  /* font-size: 0.9rem; */
-}
+
 .contact-us {
   display: flex;
   flex-direction: column;
