@@ -2,30 +2,17 @@ import "./assets/css/variables.css";
 import "./assets/css/App.css";
 import "./assets/css/response.css";
 import "./assets/css/materialdesignicons.min.css";
-
-import {
-  Header,
-  CallToAction,
-  Achievements,
-  Portfolio,
-  MyExperience,
-  Contact,
-  Footer,
-  GoUp,
-} from "./components";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { LandingPage, Wallet } from "./pages";
 
 const App = () => {
   return (
-    <div className="container">
-      <Header />
-      <CallToAction />
-      <Achievements />
-      <Portfolio />
-      <MyExperience />
-      <Contact />
-      <Footer />
-      <GoUp />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/wallet" element={<Wallet />} />
+      </Routes>
+    </BrowserRouter>
   );
 };
 
