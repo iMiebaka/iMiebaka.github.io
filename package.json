@@ -1,6 +1,7 @@
 {
   "name": "my-portfolio",
-  "private": true,
+  "private": false,
+  "homepage": "https://miebaka.me",
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
