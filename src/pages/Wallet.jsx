@@ -1,7 +1,7 @@
 import ICONS from "../assets/icons";
 
 function Wallet() {
-  location.href = "https://youtube.com/live/o5Nxknf1r9M?feature=share";
+//   location.href = "https://youtube.com/live/o5Nxknf1r9M?feature=share";
   return (
     <div
       style={{
