@@ -114,28 +114,34 @@ export default defineComponent({
                 message: this.message
             }
             const body = JSON.stringify(data)
-            const res = await fetch(
-                PORTFIOLO_URL, {
-                    headers: {
-                        "Content-type": "application/json",
-                    },
-                    method: "POST",
-                    body
-                })
+            try {
 
-            if (!res.ok) {
-                const result = await res.json()
-                this.error = result
-            } else {
-                this.success = true
-                setTimeout(() => {
-                    this.fullName = ""
-                    this.email = ""
-                    this.telegram = ""
-                    this.message = ""
-                }, 200)
+                const res = await fetch(
+                    PORTFIOLO_URL, {
+                        headers: {
+                            "Content-type": "application/json",
+                        },
+                        method: "POST",
+                        body
+                    })
+
+                if (!res.ok) {
+                    const result = await res.json()
+                    this.error = result
+                } else {
+                    this.success = true
+                    setTimeout(() => {
+                        this.fullName = ""
+                        this.email = ""
+                        this.telegram = ""
+                        this.message = ""
+                    }, 200)
+                }
+            } catch {
+                this.error = "Unable to recieve message the moment"
+            } finally {
+                this.isSubmitting = false
             }
-            this.isSubmitting = false
         }
     }
 })
