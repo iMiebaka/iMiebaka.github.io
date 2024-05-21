@@ -6,7 +6,6 @@
         <Resume v-if="store.navigation == 'Resume'" :navigation="store.navigation" @change-navigation="changeNavigation" />
         <Projects v-if="store.navigation == 'Projects'" :navigation="store.navigation" @change-navigation="changeNavigation" />
         <Contact v-if="store.navigation == 'Contact'" :navigation="store.navigation" @change-navigation="changeNavigation" />
-        <Contact v-if="store.navigation == 'Contact'" :navigation="store.navigation" @change-navigation="changeNavigation" />
         <TermsOfService v-if="store.navigation == 'Terms'" :navigation="store.navigation" @change-navigation="changeNavigation" />
         <Footer :navigation="store.navigation" @change-navigation="changeNavigation" />
     </main>

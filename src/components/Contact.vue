@@ -48,20 +48,31 @@
                         <!---->
                         <!-- This is what your users will see when the form-->
                         <!-- has successfully submitted-->
-                        <div v-if="success" id="submitSuccessMessage">
-                            <div class="text-center mb-3">
-                                <div class="fw-bolder text-success">Form submission successful!</div>
+                        <Transition name="fade">
+                            <div v-if="success" id="submitSuccessMessage">
+                                <div class="text-center mb-3">
+                                    <div class="fw-bolder text-success">Thank you for reaching out 🚀</div>
+                                </div>
                             </div>
-                        </div>
+                        </Transition>
                         <!-- Submit error message-->
                         <!---->
                         <!-- This is what your users will see when there is-->
                         <!-- an error submitting the form-->
-                        <div v-if="error" id="submitErrorMessage">
-                            <div class="text-center text-danger mb-3">{{error}}</div>
-                        </div>
+                        <Transition name="fade">
+                            <div v-if="error" id="submitErrorMessage">
+                                <div class="text-center text-danger mb-3">{{error}}</div>
+                            </div>
+                        </Transition>
                         <!-- Submit Button-->
-                        <div class="d-grid"><button class="btn btn-primary btn-lg" id="submitButton" type="submit">Submit</button></div>
+                        <div class="d-grid">
+                            <button :disabled="isSubmitting" class="btn btn-primary btn-lg" id="submitButton" type="submit">
+                                <div v-if="isSubmitting" class="spinner-grow" role="status">
+                                </div>
+                                <span v-else>
+                                    Submit
+                                </span>
+                            </button></div>
                     </form>
                 </div>
             </div>
@@ -74,11 +85,15 @@
 import {
     defineComponent
 } from 'vue';
+import {
+    PORTFIOLO_URL
+} from "../assets/utils/api"
 
 export default defineComponent({
     name: 'contact',
     data() {
         return ({
+            isSubmitting: false,
             success: false,
             error: "",
             fullName: "",
@@ -89,30 +104,38 @@ export default defineComponent({
     },
     methods: {
         async handleSubmit() {
+            this.isSubmitting = true
             this.success = false
             this.error = ""
             const data = {
                 fullName: this.fullName,
                 email: this.email,
-                telegram: this.telegram,
+                chatRoom: this.telegram,
                 message: this.message
             }
             const body = JSON.stringify(data)
-
-            const res = await fetch("", {
-                headers: {
-                    "Content-type": "application/json",
-                },
-                method: "POST",
-                body
-            })
+            const res = await fetch(
+                PORTFIOLO_URL, {
+                    headers: {
+                        "Content-type": "application/json",
+                    },
+                    method: "POST",
+                    body
+                })
 
             if (!res.ok) {
                 const result = await res.json()
                 this.error = result
             } else {
                 this.success = true
+                setTimeout(() => {
+                    this.fullName = ""
+                    this.email = ""
+                    this.telegram = ""
+                    this.message = ""
+                }, 200)
             }
+            this.isSubmitting = false
         }
     }
 })

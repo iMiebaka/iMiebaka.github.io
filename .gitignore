@@ -1,3 +1,5 @@
 node_modules
 README.md
 docs/404.html
+.env
+.env.production
