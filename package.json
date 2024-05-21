@@ -1,23 +1,20 @@
 {
-  "name": "my-portfolio",
-  "private": false,
-  "homepage": "https://miebaka.me/",
+  "name": "miebaka-portfolio",
+  "private": true,
   "version": "0.0.0",
+  "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vue-tsc && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
-    "interweave": "^13.0.0",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-router-dom": "^6.16.0",
-    "sweetalert": "^2.1.2",
-    "uuid4": "^2.0.2"
+    "vue": "^3.4.21"
   },
   "devDependencies": {
-    "@vitejs/plugin-react": "^1.0.7",
-    "vite": "^2.8.0"
+    "@vitejs/plugin-vue": "^5.0.4",
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0",
+    "vue-tsc": "^2.0.6"
   }
 }
