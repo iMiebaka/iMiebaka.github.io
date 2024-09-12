@@ -80,6 +80,7 @@ const info = {
     "MySQL",
     "Redis",
     "Kafka",
+    "RabbitMq"
   ],
   contact: [
     // [
@@ -99,12 +100,12 @@ const info = {
     ],
   ],
   socials: {
-    youtube: "https://www.youtube.com/channel/UCsGKSxC-QiXPldnLiDiSo5g",
+    youtube: "https://www.youtube.com/@imiebaka",
     twitter: "https://twitter.com/miebakaIwarri",
     linkedin: "https://linkedin.com/in/miebakaiwarri",
     github: "https://github.com/iMiebaka",
   },
-  cv: "https://github.com/iMiebaka/iMiebaka.github.io/raw/main/docs/assets/Miebaka-Iwarri_CV.pdf",
+  cv: "https://github.com/iMiebaka/iMiebaka.github.io/raw/main/docs/assets/MIEBAKA IWARRI-RESUME.pdf",
 };
 
 export default info;
